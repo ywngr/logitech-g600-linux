@@ -17,5 +17,9 @@ The program needs privileges to communicate with G600 so typically it'll be star
 
 ```bash
 sudo chown .input g600
-sudo chmod g+s g600
+sudo chmod g+xs g600
 ```
+## Systemd
+1. Copy .service file to ~/.config/systemd/user/mouse-g600.service
+2. systemctl --user enable mouse-g600.service
+3. systemctl --user daemon-reload
