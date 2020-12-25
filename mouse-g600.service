@@ -1,0 +1,10 @@
+[Unit]
+Description=Keymapper for Logitech G600 mouse
+
+[Service]
+Environment=DISPLAY=:0
+Type=idle
+ExecStart=/home/ywngr/bin/g600
+
+[Install]
+WantedBy=multi-user.target
