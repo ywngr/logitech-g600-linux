@@ -5,6 +5,7 @@ Description=Keymapper for Logitech G600 mouse
 Environment=DISPLAY=:0
 Type=idle
 ExecStart=/home/ywngr/bin/g600
+Restart=always
 
 [Install]
 WantedBy=multi-user.target
